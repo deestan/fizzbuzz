@@ -1,0 +1,1 @@
+print(["fizzbuzz"[n%3and 4:8-(n%5and 4)]or n for n in range(1,101)])

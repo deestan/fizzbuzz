@@ -1,0 +1,1 @@
+console.log(Array.from({length:101}).map(($$,$)=>[].at.call`${(!($%5)&&2)|(!($%3)&&1)}FIZZ${Math}BUZZ${console}FIZZBUZZ`||$).slice(1))
