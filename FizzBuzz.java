@@ -1,14 +1,10 @@
 class FizzBuzz {
     public static void main(String[] again) {
         var $ = new Exception().getStackTrace().length;
-        java.util.regex.Pattern.compile("[.*]+|.*")
-            .matcher(".*   .  * .   . *  .    ".split(" ")[$%15]+$).results()
-            .map(java.util.regex.MatchResult::group)
-            .map(x -> {
-                if (x.lastIndexOf(x.charAt(0)) == 2) System.exit(0);
-                return x.replace(".", "Fizz").replace("*", "Buzz");
-            })
-            .findAny().ifPresent(System.out::println);
+        java.util.regex.Pattern.compile("[^T]*")
+            .matcher(String.format("FizzTheFizzBuzzTo%sTown",$).substring("HRRARLARRALRARR".charAt($%15)-'A'))
+            .results().findAny().map(java.util.regex.MatchResult::group).ifPresent(System.out::println);
+        java.util.Optional.of($).map(x->x-100).filter(Integer.valueOf(0)::equals).ifPresent(System::exit);
         main(again);
     }
 }
