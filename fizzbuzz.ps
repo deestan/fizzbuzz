@@ -1,0 +1,33 @@
+%!PS
+/fontsize 14 def
+/Courier fontsize selectfont
+
+/Buzz { 0 0 0.5 setrgbcolor (Buzz) show } def
+/Fizz { 0.5 0 0 setrgbcolor (Fizz) show } def
+
+/gonumpos { % <integer: index (returned)> moveto index print location
+    dup
+    1 sub dup
+    2 idiv fontsize 1 add mul 820 exch sub
+    exch 2 mod 200 mul 10 add
+    exch moveto
+}bind def
+
+/erase { % draw blank rectangle
+    gsave
+    0 fontsize rlineto
+    100 0 rlineto
+    0 fontsize neg rlineto
+    -100 0 rlineto
+    closepath
+    1 1 1 setrgbcolor fill
+    grestore
+}bind def
+
+1 1 100 { gonumpos 3 string cvs show } for
+5 5 100 { gonumpos erase Buzz } for
+3 3 100 { gonumpos erase Fizz } for
+fontsize 2.4 mul 0 translate
+15 15 100 { gonumpos Buzz } for
+
+showpage
