@@ -5,24 +5,23 @@
 /Buzz { 0 0 0.5 setrgbcolor (Buzz) show } def
 /Fizz { 0.5 0 0 setrgbcolor (Fizz) show } def
 
-/gonumpos { % <integer: index (returned)> moveto index print location
+/gonumpos {
     dup
     1 sub dup
     2 idiv fontsize 1 add mul 820 exch sub
     exch 2 mod 200 mul 10 add
     exch moveto
-}bind def
+} bind def
 
-/erase { % draw blank rectangle
+/erase {
     gsave
-    0 fontsize rlineto
     100 0 rlineto
-    0 fontsize neg rlineto
+    0 fontsize rlineto
     -100 0 rlineto
     closepath
-    1 1 1 setrgbcolor fill
+    1 setgray fill
     grestore
-}bind def
+} bind def
 
 1 1 100 { gonumpos 3 string cvs show } for
 5 5 100 { gonumpos erase Buzz } for
