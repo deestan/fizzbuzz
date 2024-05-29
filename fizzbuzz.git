@@ -43,3 +43,4 @@ def timefudge(origTime):
                 yield (author, committer, mess)
         roof += 1
 
+def isTargetCommit(c):
