@@ -86,3 +86,4 @@ for i in range(14, 101, 15): sequence[i] = "FBFB"
 
 myself = open(sys.argv[0], "r").readlines()
 oot = open("fizzbuzz.git", "w")
+for i in range(100):
