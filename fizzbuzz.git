@@ -53,3 +53,4 @@ def getCommit():
     c = subprocess.check_output("git cat-file -p HEAD".split()).decode('utf8')
     startTimeA = re.compile('author.* (\d+) \+').findall(c)[0]
     startTimeC = re.compile('committer.* (\d+) \+').findall(c)[0]
+    splitAuthor = c.find("author")
