@@ -71,3 +71,4 @@ def getTargetCommit(startTime, ct):
         if isTargetCommit(c):
             return c
 
+def addCommit(commit):
