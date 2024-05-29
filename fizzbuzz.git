@@ -55,3 +55,4 @@ def getCommit():
     startTimeC = re.compile('committer.* (\d+) \+').findall(c)[0]
     splitAuthor = c.find("author")
     ca1 = c[:splitAuthor]
+    ca2 = c[splitAuthor:]
