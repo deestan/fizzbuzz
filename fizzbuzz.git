@@ -40,3 +40,4 @@ def timefudge(origTime):
             author = origTime+i
             committer = origTime+roof
             for mess in spacefudge():
+                yield (author, committer, mess)
