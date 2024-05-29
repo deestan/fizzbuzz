@@ -51,3 +51,4 @@ def isTargetCommit(c):
 
 def getCommit():
     c = subprocess.check_output("git cat-file -p HEAD".split()).decode('utf8')
+    startTimeA = re.compile('author.* (\d+) \+').findall(c)[0]
