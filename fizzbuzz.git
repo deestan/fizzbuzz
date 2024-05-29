@@ -47,3 +47,4 @@ def isTargetCommit(c):
     global target
     h = hashlib.sha1(b'commit %d\0'%len(c))
     h.update(c)
+    return h.digest()[:len(target)] == target
