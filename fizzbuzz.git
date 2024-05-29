@@ -49,3 +49,4 @@ def isTargetCommit(c):
     h.update(c)
     return h.digest()[:len(target)] == target
 
+def getCommit():
