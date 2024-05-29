@@ -75,3 +75,4 @@ def addCommit(commit):
     res = subprocess.check_output("git hash-object -w -t commit --stdin".split(), input=commit)
     return res
     
+def updateBranch(newHash):
