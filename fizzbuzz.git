@@ -46,3 +46,4 @@ def timefudge(origTime):
 def isTargetCommit(c):
     global target
     h = hashlib.sha1(b'commit %d\0'%len(c))
+    h.update(c)
