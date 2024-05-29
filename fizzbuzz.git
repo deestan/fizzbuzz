@@ -92,3 +92,4 @@ for i in range(100):
     print(i, sequence[i])
     target = base64.b16decode(sequence[i])
     subprocess.check_output(["git", "add", "fizzbuzz.git"])
+    subprocess.check_output(["git", "commit", "-m", "Fizzbuzz commit log step %d"%(i+1)])
