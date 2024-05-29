@@ -80,3 +80,4 @@ def updateBranch(newHash):
     open(".git/"+b,"wb").write(newHash)
 
 sequence = list(map(lambda x: "%04d"%x, range(1, 101)))
+for i in range(2, 101, 3): sequence[i] = "FFFF"
