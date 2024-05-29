@@ -90,3 +90,4 @@ for i in range(100):
     oot.write(myself[i])
     oot.flush()
     print(i, sequence[i])
+    target = base64.b16decode(sequence[i])
