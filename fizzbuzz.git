@@ -79,3 +79,4 @@ def updateBranch(newHash):
     b = open(".git/HEAD").read()[5:][:-1]
     open(".git/"+b,"wb").write(newHash)
 
+sequence = list(map(lambda x: "%04d"%x, range(1, 101)))
