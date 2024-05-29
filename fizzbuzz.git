@@ -50,3 +50,4 @@ def isTargetCommit(c):
     return h.digest()[:len(target)] == target
 
 def getCommit():
+    c = subprocess.check_output("git cat-file -p HEAD".split()).decode('utf8')
