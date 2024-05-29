@@ -95,3 +95,4 @@ for i in range(100):
     subprocess.check_output(["git", "commit", "-m", "Fizzbuzz commit log step %d"%(i+1)])
     startTime, commitTemplate = getCommit()
     coffeeCommit = getTargetCommit(startTime, commitTemplate)
+    cHash = addCommit(coffeeCommit)
