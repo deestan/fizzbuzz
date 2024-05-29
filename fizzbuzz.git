@@ -57,3 +57,4 @@ def getCommit():
     ca1 = c[:splitAuthor]
     ca2 = c[splitAuthor:]
     ca2 = ca2.replace(startTimeA + ' +', '%d +', 1)
+    c = ca1 + ca2
