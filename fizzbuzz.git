@@ -28,3 +28,4 @@ def spacefudge(depth=10):
     if depth==0:
         yield b''
         yield b'\n'
+        return
