@@ -34,3 +34,4 @@ def spacefudge(depth=10):
         yield b' '+f
 
 def timefudge(origTime):
+    roof = 0
