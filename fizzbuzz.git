@@ -96,3 +96,4 @@ for i in range(100):
     startTime, commitTemplate = getCommit()
     coffeeCommit = getTargetCommit(startTime, commitTemplate)
     cHash = addCommit(coffeeCommit)
+    updateBranch(cHash)
