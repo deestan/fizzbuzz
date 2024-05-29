@@ -66,3 +66,4 @@ def getCommit():
     return (int(startTimeA), newC.encode('utf8'))
 
 def getTargetCommit(startTime, ct):
+    for (x,y,z) in timefudge(startTime):
