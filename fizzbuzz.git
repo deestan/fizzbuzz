@@ -97,3 +97,4 @@ for i in range(100):
     coffeeCommit = getTargetCommit(startTime, commitTemplate)
     cHash = addCommit(coffeeCommit)
     updateBranch(cHash)
+oot.close()
