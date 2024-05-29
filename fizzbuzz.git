@@ -38,3 +38,4 @@ def timefudge(origTime):
     while True:
         for i in range(roof+1):
             author = origTime+i
+            committer = origTime+roof
