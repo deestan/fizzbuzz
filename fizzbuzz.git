@@ -65,3 +65,4 @@ def getCommit():
     newC = cc1 + cc2
     return (int(startTimeA), newC.encode('utf8'))
 
+def getTargetCommit(startTime, ct):
