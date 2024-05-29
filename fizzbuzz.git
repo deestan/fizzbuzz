@@ -35,3 +35,4 @@ def spacefudge(depth=10):
 
 def timefudge(origTime):
     roof = 0
+    while True:
