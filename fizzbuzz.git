@@ -44,3 +44,4 @@ def timefudge(origTime):
         roof += 1
 
 def isTargetCommit(c):
+    global target
