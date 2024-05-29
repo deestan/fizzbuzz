@@ -59,3 +59,4 @@ def getCommit():
     ca2 = ca2.replace(startTimeA + ' +', '%d +', 1)
     c = ca1 + ca2
     splitCommitter = c.find("committer")
+    cc1 = c[:splitCommitter]
