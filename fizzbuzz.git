@@ -25,3 +25,4 @@ if not (sys.argv+[''])[1] == "i-want-to-make-a-mess-please":
     sys.exit(1)
 
 def spacefudge(depth=10):
+    if depth==0:
