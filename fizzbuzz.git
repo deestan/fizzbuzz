@@ -30,3 +30,4 @@ def spacefudge(depth=10):
         yield b'\n'
         return
     for f in spacefudge(depth-1):
+        yield b'\t'+f
