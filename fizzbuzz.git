@@ -12,3 +12,4 @@
 # - the line number, zero-padded
 # - "ffff" for fizzes
 # - "bbbb" for buzzes
+# - "fbfb" for fizzbuzzes
