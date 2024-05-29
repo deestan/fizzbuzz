@@ -76,3 +76,4 @@ def addCommit(commit):
     return res
     
 def updateBranch(newHash):
+    b = open(".git/HEAD").read()[5:][:-1]
