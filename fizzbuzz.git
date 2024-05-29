@@ -70,3 +70,4 @@ def getTargetCommit(startTime, ct):
         c = (ct%(x,y)) + z
         if isTargetCommit(c):
             return c
+
