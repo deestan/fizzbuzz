@@ -26,3 +26,4 @@ if not (sys.argv+[''])[1] == "i-want-to-make-a-mess-please":
 
 def spacefudge(depth=10):
     if depth==0:
+        yield b''
