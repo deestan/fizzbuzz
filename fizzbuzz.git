@@ -89,3 +89,4 @@ oot = open("fizzbuzz.git", "w")
 for i in range(100):
     oot.write(myself[i])
     oot.flush()
+    print(i, sequence[i])
