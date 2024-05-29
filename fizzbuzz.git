@@ -21,3 +21,4 @@ import base64
 import sys
 
 if not (sys.argv+[''])[1] == "i-want-to-make-a-mess-please":
+    print(''.join(open(sys.argv[0], 'r').readlines()[:15]))
