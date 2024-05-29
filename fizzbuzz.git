@@ -20,3 +20,4 @@ import hashlib
 import base64
 import sys
 
+if not (sys.argv+[''])[1] == "i-want-to-make-a-mess-please":
