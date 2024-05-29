@@ -64,3 +64,4 @@ def getCommit():
     cc2 = cc2.replace(startTimeC + ' +', '%d +', 1)
     newC = cc1 + cc2
     return (int(startTimeA), newC.encode('utf8'))
+
