@@ -62,3 +62,4 @@ def getCommit():
     cc1 = c[:splitCommitter]
     cc2 = c[splitCommitter:]
     cc2 = cc2.replace(startTimeC + ' +', '%d +', 1)
+    newC = cc1 + cc2
