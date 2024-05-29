@@ -17,3 +17,4 @@
 import re
 import subprocess
 import hashlib
+import base64
