@@ -33,3 +33,4 @@ def spacefudge(depth=10):
         yield b'\t'+f
         yield b' '+f
 
+def timefudge(origTime):
