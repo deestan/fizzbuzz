@@ -83,3 +83,4 @@ sequence = list(map(lambda x: "%04d"%x, range(1, 101)))
 for i in range(2, 101, 3): sequence[i] = "FFFF"
 for i in range(4, 101, 5): sequence[i] = "BBBB"
 for i in range(14, 101, 15): sequence[i] = "FBFB"
+
