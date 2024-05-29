@@ -24,3 +24,4 @@ if not (sys.argv+[''])[1] == "i-want-to-make-a-mess-please":
     print(''.join(open(sys.argv[0], 'r').readlines()[:15]))
     sys.exit(1)
 
+def spacefudge(depth=10):
