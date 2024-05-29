@@ -88,3 +88,4 @@ myself = open(sys.argv[0], "r").readlines()
 oot = open("fizzbuzz.git", "w")
 for i in range(100):
     oot.write(myself[i])
+    oot.flush()
