@@ -8,3 +8,4 @@
 #
 # $ git blame fizzbuzz.git
 #
+# The first 4 digits of each line's commit hash will be either of:
