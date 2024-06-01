@@ -1,0 +1,30 @@
+<style>
+    body {
+        font-family: monospace;
+        font-size: 2vw
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #100;
+            color: #efe
+        }
+    }
+    b { counter-increment: 🔢 }
+    b:nth-child( 1n):before { content: counter(🔢) }
+    b:nth-child( 3n):before { content: 'fizz'     }
+    b:nth-child( 5n):before { content:     'buzz' }
+    b:nth-child(15n):before { content: 'fizzbuzz' }
+    b:after            { content: ', ' }
+    b:last-child:after { content: ''   }
+</style>
+
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
