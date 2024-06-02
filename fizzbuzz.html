@@ -4,27 +4,30 @@
         font-size: 2vw
     }
     @media (prefers-color-scheme: dark) {
-        body {
-            background: #100;
-            color: #efe
-        }
+        body { background: #100 }
+        hr { color: #efe }
     }
-    b { counter-increment: 🔢 }
-    b:nth-child( 1n):before { content: counter(🔢) }
-    b:nth-child( 3n):before { content: 'fizz'     }
-    b:nth-child( 5n):before { content:     'buzz' }
-    b:nth-child(15n):before { content: 'fizzbuzz' }
-    b:after            { content: ', ' }
-    b:last-child:after { content: ''   }
+    hr {
+        display: inline;
+        border: none;
+        padding: 0;
+        counter-increment: 🔢
+    }
+    hr:nth-child( 1n):before { content: counter(🔢)}
+    hr:nth-child( 3n):before { content: 'fizz'     }
+    hr:nth-child( 5n):before { content:     'buzz' }
+    hr:nth-child(15n):before { content: 'fizzbuzz' }
+    hr:after            { content: ', ' }
+    hr:last-child:after { content: ''   }
 </style>
 
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
